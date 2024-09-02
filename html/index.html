@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iZurich Snack Bar</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <h1>iZurich Snack Bar</h1>
+            <nav>
+                <ul>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#highlights">Highlights</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#login">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <h2>Welcome to iZurich Snack Bar!</h2>
+        <p>Your go-to place for delicious snacks anytime, anywhere.</p>
+        <input type="text" id="searchInput" placeholder="Search Menu...">
+        <p id="searchResult"></p> <!-- Added to show search result -->
+    </section>
+    
+
+    <!-- Menu -->
+    <section id="menu">
+        <h2>Our Menu</h2>
+            <img src="C:/Users/kelly/Desktop/iZurich Snack Bar/pics/menu.png" alt="Menu Image" style="width:1000px;height:650px;">
+    </section>
+
+
+    <!-- Highlights -->
+    <section id="highlights">
+        <h2>Highlights</h2>
+        <p>Check out our latest promotions and featured snacks!</p>
+        <img src="C:/Users/kelly/Desktop/iZurich Snack Bar/pics/menu1.1.jpg" alt="Menu Image" style="width:500px;height:600px;">
+    </section>
+
+    <!-- News -->
+    <section id="news">
+        <h2>Latest News</h2>
+        <p>Stay updated with our latest offerings and announcements.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Snack First. All rights reserved.</p>
+            <p>Follow us on social media: 
+                <a href="https://www.facebook.com/snackfirst.sanluis">Facebook</a> | 
+                <a href="https://x.com/MackenryA99087">Twitter</a> | 
+                <a href="#">Instagram</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Popup for search results -->
+    <div id="popup" class="popup">
+        <div class="popup-header">
+            <span id="popupTitle">Search Result</span>
+            <div class="popup-controls">
+                <button id="minimizeBtn">_</button>
+                <button id="enlargeBtn">[ ]</button>
+                <button id="closeBtn">&times;</button>
+            </div>
+        </div>
+        <div id="popupContent" class="popup-content">
+            <p id="searchResultPopup"></p>
+        </div>
+    </div>
+
+    <!-- Login Popup -->
+    <div id="loginPopup" class="popup">
+        <div class="popup-header">
+            <span id="loginTitle">Login</span>
+            <div class="popup-controls">
+                <button id="loginCloseBtn">&times;</button>
+            </div>
+        </div>
+        <div id="loginPopupContent" class="popup-content">
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <br><br>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Login Success Popup -->
+    <div id="successPopup" class="popup">
+        <div class="popup-header">
+            <span id="successTitle">Success</span>
+            <div class="popup-controls">
+                <button id="successCloseBtn">&times;</button>
+            </div>
+        </div>
+        <div id="successPopupContent" class="popup-content">
+            <p>Log in successfully!</p>
+        </div>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="../js/script.js"></script>
+</body>
+</html>

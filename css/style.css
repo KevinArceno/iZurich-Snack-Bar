@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: yellow; /* Background color is yellow */
+}
+
+header {
+    background-color: red; /* Background color is red */
+    color: white; /* Text color is now yellow */
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white; /* Navigation links are now yellow */
+    text-decoration: none;
+}
+
+.banner {
+    background: url('your-banner-image.jpg') no-repeat center center/cover;
+    color: black; /* Banner text color is black */
+    text-align: center;
+    padding: 50px 0;
+}
+
+.banner input {
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+}
+
+#menu, #highlights, #news {
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.menu-items .item {
+    background-color: red;
+    padding: 20px;
+    border-radius: 8px;
+    width: 150px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-items .item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px; /* Optional: Add some border-radius for rounded corners */
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 50px;
+  }
+  
+  h2 {
+    font-size: 35px;
+  }
+
+  /* Popup Styles */
+.popup {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.popup-controls button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.popup-content {
+    padding: 20px;
+    color: black;
+}
+
+.popup.minimized {
+    width: 150px;
+    height: 40px;
+    overflow: hidden;
+    top: unset;
+    bottom: 10px;
+    left: 10px;
+    transform: none;
+}
+
+.popup.enlarged {
+    width: 80%;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
